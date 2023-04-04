@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
-
+*/
 
 Route::view('/', 'blade');
 
@@ -26,4 +26,4 @@ Route::prefix('admin')->middleware('auth','admin')->group(function (){
 });
 
 Auth::routes();
-*/
+
